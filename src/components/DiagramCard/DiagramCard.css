@@ -1,0 +1,43 @@
+.diagram-card-link {
+  text-decoration: none;
+  margin: 15px; /* Adjust this value as needed */
+  position: relative; /* To position the tooltip relative to the card */
+
+}
+
+.diagram-card {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* To position the hover content relative to the card */
+
+}
+
+.diagram-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.diagram-card-title {
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.hover-tooltip {
+  position: fixed;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  z-index: 1000;
+  transform: translateY(-50%); /* Adjusted transform property */
+}

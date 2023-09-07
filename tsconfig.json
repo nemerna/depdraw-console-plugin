@@ -8,7 +8,9 @@
     "allowJs": true,
     "strict": false,
     "noUnusedLocals": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "include": ["src"]
 }

@@ -4,5 +4,6 @@ dist/
 integration-tests/videos
 integration-tests/screenshots
 integration-tests/.DS_Store
+node_modules
 yarn-error.log
 .DS_Store

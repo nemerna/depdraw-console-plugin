@@ -5,3 +5,144 @@
    * https://patternfly-react-main.surge.sh/developer-resources/global-css-variables */
   color: var(--pf-global--palette--blue-400);
 }
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+.rotateHandle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #3367d9;
+  left: 50%;
+  top: -30px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  cursor: alias;
+}
+
+.rotateHandle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  background: #3367d9;
+  left: 4px;
+  top: 5px;
+}
+
+.simple-floatingedges {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.simple-floatingedges .react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background-color: #bbb;
+}
+
+.simple-floatingedges .react-flow__handle-top {
+  top: -15px;
+}
+
+.simple-floatingedges .react-flow__handle-bottom {
+  bottom: -15px;
+}
+
+.simple-floatingedges .react-flow__handle-left {
+  left: -15px;
+}
+
+.simple-floatingedges .react-flow__handle-right {
+  right: -15px;
+}
+
+.simple-floatingedges .react-flow__node-custom {
+  background: #fff;
+  border: 1px solid #1a192b;
+  border-radius: 3px;
+  color: #222;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+
+
+.dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndnode.ResizableNodeSelected {
+  border-color: #0041d0;
+}
+
+/* Additional styles can be added here */

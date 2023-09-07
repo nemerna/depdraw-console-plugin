@@ -1,8 +1,9 @@
 import React from 'react';
 import './example.css';
+const DiagramPage = React.lazy(() => import('../containers/DiagramPage'));
+
 // import CanvasPage from '../containers/CanvasPage';
-const CanvasPage = React.lazy(() => import('../containers/CanvasPage'));
-export default function ExamplePage() {
+export default function DepDraw() {
   // Define static width and height values
   const canvasWidth = '100%';
   const canvasHeight = '100%';
@@ -16,7 +17,7 @@ export default function ExamplePage() {
   return (
     <div style={containerStyle}>
       {/* Render the Canvas component inside the container div */}
-      <CanvasPage />
+      <DiagramPage />
     </div>
   );
 }

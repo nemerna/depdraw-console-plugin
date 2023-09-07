@@ -1,0 +1,71 @@
+/* A gradient header with a subtle drop shadow feels fresh and modern */
+.app-header {
+  background: linear-gradient(90deg, #001529 0%, #002545 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(255, 215, 0, 0.7); /* gold with some transparency */
+  height: 60px; /* Adjust based on your design preference */
+  line-height: 60px; /* This can help in vertical centering */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px; /* added max-width for larger screens */
+  margin: 0 auto; /* centers the content on larger screens */
+}
+
+.header-title {
+  margin: 10px;
+  font-family: 'Poppins', sans-serif; /* Poppins is a modern font. Make sure to include it if you haven't */
+  font-weight: 600; /* Semi-bold weight for emphasis */
+  color: #E0E0E0 !important; /* Slightly off-white for a softer contrast */
+  line-height: normal; /* Override the line-height from the header for the title */
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center; /* ensures vertical alignment of buttons */
+}
+
+.nav-link {
+  text-decoration: none;
+  position: relative; 
+  transition: all 0.3s; /* smooth transition for hover effect */
+}
+
+.nav-link::after {
+  /* adding an underline effect on hover */
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: gold;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%); 
+  transition: width 0.3s; 
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-button {
+  color: #E0E0E0; /* Slightly off-white for a softer contrast */
+  border: none; /* removing the default border */
+  background: transparent;
+  padding: 0 15px; /* Adjust padding for buttons; reducing vertical padding might help */
+  height: 40px; /* Explicitly setting a height can prevent it from expanding the container */
+  line-height: 40px; /* Helps vertically center the text inside the button */
+  border-radius: 3px;
+  transition: background 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 215, 0, 0.2); /* subtle gold background on hover */
+  transform: translateY(-1px); /* slight lift effect on hover */
+}
+

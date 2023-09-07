@@ -3,18 +3,28 @@
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example",
+      "path": "/depdraw/diagrams",
+      "component": {
+        "$codeRef": "DepDraw"
+      }
+    }
+  },
+  {
+    "type": "console.page/route",
+    "properties": {
+      "exact": true,
+      "path": "/example/:diagramUuid",
       "component": { "$codeRef": "ExamplePage" }
     }
   },
   {
     "type": "console.navigation/href",
     "properties": {
-      "id": "example",
-      "name": "%plugin__console-plugin-template~Plugin Example%",
-      "href": "/example",
+      "id": "depdraw",
+      "name": "%plugin__console-plugin-template~DepDraw%",
+      "href": "/depdraw/diagrams",
       "perspective": "admin",
-      "section": "home"
+      "section": ""
     }
   }
 ]
