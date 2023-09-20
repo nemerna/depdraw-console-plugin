@@ -1,0 +1,10 @@
+.create-diagram-section {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Spacing between the input and the button */
+}
+
+/* Adjust the width of the input field */
+.create-diagram-section .pf-c-text-input {
+  width: 250px;
+}
