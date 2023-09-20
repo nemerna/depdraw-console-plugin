@@ -1,8 +1,7 @@
 .diagram-card-link {
   text-decoration: none;
-  margin: 15px; /* Adjust this value as needed */
+  margin: 15px;
   position: relative; /* To position the tooltip relative to the card */
-
 }
 
 .diagram-card {
@@ -15,7 +14,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative; /* To position the hover content relative to the card */
-
 }
 
 .diagram-card:hover {
@@ -39,5 +37,5 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   pointer-events: none;
   z-index: 1000;
-  transform: translateY(-50%); /* Adjusted transform property */
+  transform: translateY(-50%);
 }

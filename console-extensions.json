@@ -13,7 +13,7 @@
     "type": "console.page/route",
     "properties": {
       "exact": true,
-      "path": "/example/:diagramUuid",
+      "path": "/canvas/:diagramUuid",
       "component": { "$codeRef": "ExamplePage" }
     }
   },
